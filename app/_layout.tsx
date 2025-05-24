@@ -1,21 +1,19 @@
 import React from 'react';
 import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
+import { Slot, Stack } from 'expo-router';
 import { Text } from 'react-native';
 import "@/global.css";
 
-export default function Layout() {
+export default function _layout() {
+
   const [fontsLoaded] = useFonts({
     MarcellusSC: require('../assets/fonts/MarcellusSC-Regular.ttf'),
   });
 
   if (!fontsLoaded) {
-    return <Text>Carregando fontes...</Text>; // Ou um componente de loading mais elaborado
+    return <Text>Carregando fontes...</Text>;
   }
-
   return (
-    <Stack>
-      <Stack.Screen name="index" options={{ headerShown: false }} />
-    </Stack>
-  );
+    <Slot />
+  )
 }
