@@ -5,7 +5,7 @@
 O **Bourbon Lab** é um aplicativo móvel dedicado a amantes de coquetéis. Ele oferece uma coleção de receitas exclusivas de drinks, com ênfase nos drinks clássicos e na arte da criação de coquetéis. O app permite aos usuários explorar receitas, criar suas próprias misturas e aprender sobre os ingredientes e técnicas utilizados na preparação dos drinks.
 
 ### Funcionalidades básicas:
-- [ ] Tela inicial com lista de drinks
+- [x] Tela inicial com lista de drinks
 - [ ] Pesquisa de receitas por nome ou ingredientes
 - [ ] Visualização de detalhes de cada drink (ingredientes, modo de preparo, etc.)
 - [ ] Favoritar receitas para fácil acesso
@@ -40,7 +40,7 @@ O banco de dados será relacional, e a modelagem contempla as seguintes tabelas 
 O cronograma de desenvolvimento do aplicativo foi dividido em sprints, com a previsão de implementação de cada funcionalidade.
 
 ### Sprint 1 (Semana 1-2):
-- [ ] Criação da tela inicial e listagem de drinks
+- [x] Criação da tela inicial e listagem de drinks
 - [ ] Implementação da funcionalidade de pesquisa de drinks
 
 ### Sprint 2 (Semana 3-4):
@@ -59,3 +59,8 @@ O cronograma de desenvolvimento do aplicativo foi dividido em sprints, com a pre
 - [ ] Refinamento de UI/UX
 - [ ] Preparação para publicação
 
+## Atualizações desde o último checkpoint
+
+Optei por utilizar o Nativewind para estilizar o app, onde tenho mais afinidade para desenvolver a parte visual, criei um componente de input dinâmico, onde o mesmo é uma modificação do componente já existente "TextInput", onde percebi que ficaria melhor para desenvolver, apliquei ele na tela principal "Home.tsx" utilizando do componente "SearchArea.tsx" onde fiz um campo de pesquisa passando dinamicamente os valores. Além disso, realizei a simulação das requisições com mocks, exibi duas situações, uma com dados e uma vindo um array vazio
+
+[Link Para o Vídeo](https://youtu.be/1NTJH36jG_E)
